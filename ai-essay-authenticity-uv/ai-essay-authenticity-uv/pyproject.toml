@@ -1,0 +1,30 @@
+[project]
+name = "ai-essay-authenticity"
+version = "0.1.0"
+description = "Detect human vs AI-generated essays with a baseline and a Transformer model"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [{name = "Amr Tarek Saif Noaman Al-Hammadi"}]
+
+dependencies = [
+    "pandas",
+    "numpy",
+    "scikit-learn",
+    "matplotlib",
+    "transformers>=4.41.0",
+    "datasets",
+    "evaluate",
+    "torch",
+    "accelerate",
+    "joblib",
+    "kaggle",
+    "seaborn",
+    "jupyter",
+]
+
+[tool.uv]
+# default uv behavior; .venv created on `uv sync`
+
+[project.optional-dependencies]
+dev = ["ruff", "pytest"]
